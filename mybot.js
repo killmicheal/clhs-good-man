@@ -26,4 +26,10 @@ client.on("message", (message) => {
     }
 });
  
+client.on("message", (message) => {
+    if (message.content.startsWith("蘿莉控")) {
+      message.channel.send("身嬌體柔易推倒");
+    }
+});
+
 client.login(process.env.BOT_KEY);
